@@ -6,13 +6,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:"Playfair Display";
-    font-size:50pt;
+    text-align center;
+    
 }
 
 header {
     text-align:center;
 }
-
+h1 {
+    fontsize:40pt;
+}
 #hero, footer {
     color: #559FE0;
     border: 2px solid #0086FF;
@@ -27,4 +30,33 @@ header {
 
 #bio {
     text-align:center;
+
+}
+
+#hobbies ul li:nth-child(1) {
+    color: whitesmoke
+       
+}
+#hobbies ul li:nth-child(2){
+    color:firebrick;
+}
+
+#hobbies ul li:nth-child(3) {
+    color:purple;
+}
+
+#hobbies ul li:nth-child(4) {
+    color:brown;
+}
+
+#hobbies ul li:nth-child(5) {
+    color:olive;
+}
+
+#hobbies ul li:nth-child(6) {
+    color:gold;
+}
+
+#hobbies ul li:nth-child(7) {
+    color:black;
 }
