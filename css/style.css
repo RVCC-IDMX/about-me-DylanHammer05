@@ -174,8 +174,8 @@ section#hobbies {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    margin-right: 3rem;
+    font-size: 10pt;
+    margin-left: 3rem;
     max-width: 100%;
    }
 
@@ -196,7 +196,6 @@ section#hobbies {
     #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:auto;
     }
     figure {
         display: flex;
@@ -206,7 +205,8 @@ section#hobbies {
 
     }
     figcaption {
-        font-size: 4rem;
+        font-size: 2rem;
+        margin-left: 1rem;
     }
 
    hr {
