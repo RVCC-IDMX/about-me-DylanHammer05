@@ -236,3 +236,8 @@ section#hobbies {
     margin-top: 10px;
     font-style: italic;
 }
+}
+/* Contact Form */
+#formElements {
+    display:grid;
+}
