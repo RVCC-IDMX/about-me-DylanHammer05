@@ -240,7 +240,9 @@ section#hobbies {
 /* Contact Form */
 #formElements {
     display:grid;
+    font-size: 18px;
 }
+
 
 /* Form Styles */
 
@@ -252,11 +254,13 @@ fieldset {
     background: linear-gradient(45deg, #E5C189, #FF9C6E);
     color: #0086FF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
 }
 
 legend {
     color: #559FE0;
     font-weight: bold;
+
 }
 
 .form-group {
@@ -350,4 +354,21 @@ button[type="submit"]:hover {
 /* Additional Stuff */
 .button:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+
+#reply-fieldset {
+    font-size: 20px;
+    border: none;
+}
+
+#reply-fieldset ul {
+    list-style: none;
+    padding: 0;
+}
+
+#reply-fieldset legend {
+    color: black;
+    background-color: lavender;
+
 }
