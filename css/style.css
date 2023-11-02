@@ -241,3 +241,113 @@ section#hobbies {
 #formElements {
     display:grid;
 }
+
+/* Form Styles */
+
+fieldset {
+    border: 2px solid #0086FF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg, #E5C189, #FF9C6E);
+    color: #0086FF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+legend {
+    color: #559FE0;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0086FF;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type="submit"] {
+    background: linear-gradient(45deg, #0086FF, #0056b3);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: background- 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #0056b3, #002f66);
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For iPhone 6 and similar-sized screens */
+@media screen and (max-width: 375px) {
+    fieldset {
+        padding: 15px;
+    }
+    
+    label {
+        font-size: 16px;
+    }
+    
+    input, select, textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* For iPad and larger screens */
+@media screen and (min-width: 768px) {
+    fieldset {
+        padding: 40px;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    input, select, textarea {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* Additional Stuff */
+.button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
