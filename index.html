@@ -16,6 +16,11 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <div class="logo">
                 <img src="img/Transparent Favicon.png" alt="new logo!">
                 <h1>Web Dev I</h1>
@@ -192,5 +197,17 @@
         &copy;2023- Dylan Hammermueller
       <a href="https://github.com/RVCC-IDMX/about-me-DylanHammer05" target="_blank">GitHub Repo</a>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menu = document.querySelector('.navbar-links');
+            var hamburger = document.querySelector('.hamburger-menu');
+
+            hamburger.addEventListener('click', function () {
+                menu.classList.toggle('show');
+                hamburger.classList.toggle('open');
+            });
+        });
+    </script>
+    
 </body>
 </html>
