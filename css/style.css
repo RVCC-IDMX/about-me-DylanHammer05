@@ -235,8 +235,8 @@ figcaption {
 }
 
 #lit img:hover {
-    filter: grayscale(0%)
-    transform: scale(1.1);
+    filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 /* tablet size */
