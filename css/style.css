@@ -180,15 +180,25 @@ height: 100%;
 }
 
 .figure-container figure {
-    margin: 10px;
-    border: 2px solid #0086FF;
-    overflow: hidden;
-    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.figure-container img {
+    transition: filter 0.3s ease-in-out;
+}
+
+.figure-container figure:hover {
+    transform: scale(1.1);
+}
+
+.figure-container img:hover {
+    filter: grayscale(70%);
 }
 
 #gallery img {
     max-width: 100%;
     height: auto;
+
 }
 
 figcaption {

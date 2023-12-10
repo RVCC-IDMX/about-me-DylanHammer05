@@ -1,6 +1,5 @@
 # README
 
-
  ## About Me Project- By: Dylan Hammermueller (Dylan Hammer05)
 
  [![Netlify Status](https://api.netlify.com/api/v1/badges/19b3866e-f754-43c0-bac0-96da9329a845/deploy-status)](https://app.netlify.com/sites/dylanhammer05/deploys)
