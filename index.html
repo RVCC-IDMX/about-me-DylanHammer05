@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information and title for the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    
+    <!-- Font and Favicon links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/Transparent Favicon.png">
 
-<link href="css/style.css" rel="stylesheet">
-<link href="css/nav.css" rel="stylesheet">
+    <!-- Link to external CSS files -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header section containing navigation -->
     <header>
         <nav class="navbar">
+            <!-- Hamburger menu icon -->
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!-- Logo and navigation links -->
             <div class="logo">
-                <img src="img/logo-96X96.svg" alt="Blue origami image">
+                <img src="img/Transparent Favicon.png" alt="new logo!">
                 <h1>Web Dev I</h1>
             </div>
-            
             <div class="navbar-links">
                 <ul>
+                    <!-- Navigation links -->
                     <li><a href="#bio" class="nav-links">Bio</a></li>
                     <li><a href="#gallery" class="nav-links">Gallery</a></li>
                     <li><a href="#lit" class="nav-links">Blog</a></li>
@@ -29,107 +42,99 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main content section -->
     <main>
+        <!-- Hero section with personal information -->
         <section id="hero">
             <img src= "img/avataaars.png" alt="My avatar!">
-
             <div>
                 <p>Dylan Hammermueller</p>
                 <p> Hampton, NJ</p>
             </div>
-      </section>
+        </section>
 
-      <section id="bio">
-        <h2>Biography</h2>
-        <div>
-            <p>I want to be...</p>
-            <p>a source of joy for others</p>
-            <p>my favorite way to work is...</p>
-            <p>at night on the phone with friends</p>
-            <p>in my free time, I like to...</p>
-            <p>digital draw, play piano, game with friends, and ski down tall mountains</p>
+        <!-- Biography section -->
+        <section id="bio">
+            <h2>Biography</h2>
+            <div>
+            <img src="img/20230531_210553.jpg" alt="My selfie"> 
+            <p>Hello there! I'm Dylan Hammermueller, Born and raised in Hampton, NJ! As a new web developer, I find joy in translating ideas into digital realities. Using HTML and CSS is such a cool skill to have, and I hope I can improve upon it even more!</p>
+        
+        <p>My favorite way to work is during the quiet hours of the night, enjoying the quiet sounds of my music and the dim moonlight. I aspire to be a source of joy for others, whether through my code, drawings, games, or the experiences I create.</p>
+        
+        <p>In my free time, you'll find me immersed in various activities. Playing the piano is one of my favorite pastimes, providing a melodic escape from the everyday hustle. Skiing is another activity I really enjoy, I love going down tall mountains with friends and family!</p>
+        
+        <p>I also work as a dog trainer which helps me not only stay active through downtime when I am not in school, but also teaches me invaluable skills that aid me in everyday life. I really enjoy working with dogs, and I have become more patient with dogs through this job as a result.</p>
+        
+        <p> Ever since I was young, I have always been fascinated with technology. The advancements made in the tech industry is simply incredible and I hope I can go into this industry one day. Life's too short not to explore things that make you passionate! </p>
+        
+        <p>If you're in need of a pick-me-up, or just want something that is wholesome, check out 
+            <a href="https://www.youtube.com/watch?v=YJU52NvfdlI&ab_channel=milperthusky">this cute video</a> which never fails to bring a smile to my face.</p>
+         </div>
+        </section>
 
-            <p><a href="https://www.youtube.com/watch?v=YJU52NvfdlI&ab_channel=milperthusky"> Cute Video!</a></p>
-
-          
-
-
-
-        </div>
-
-
-
-      </section>
-
+         <!-- Hobbies section -->
       <section id="hobbies">
         <h2>Hobbies:</h2>
 
         <ul>
-            <li> Digital draw on procreate</li>
-            <li> play video games with friends</li>
-            <li> bake all types of food</li>
-            <li> skateboard and jog</li>
-            <li>  playing DND at the college campus</li>
-            <li> listening to rock music</li>
-            <li> reading horror novels</li>
+            <li>Digital drawing on Procreate helps me unleash my creativity through fun forms of digital art! I enjoy drawing in comic style the most.</li>
+            <li>Playing video games with friends is such a fun way to pass time. A current game I play with friends is lethal company which combines horror and sci-fi elements together!</li>
+            <li>Baking all types of food in the kitchen helps me come up with cool recipes as well as trying new foods and becoming a better baker!</li>
+            <li>Skateboarding and jogging helps me stay active and enjoy the beautiful great outdoors! I've skateboarded for around a year and it's always fun to try new tricks.</li>
+            <li>Playing DND at the college campus helps me immerse myself into fun role-playing games! Fun fact, I like to use the rogue class which is a cool stealth playstyle! </li>
+            <li>Listening to rock music helps me find inspiration when creative writing! I really enjoy listening to breaking benjamin and fallout boy!</li>
+            <li>Reading horror novels helps me come up with cool drawing ideas as well as this genre being very interesting and unique when it comes to story-telling.</li>
         </ul>
         
 
 
 
       </section>
-
+        <!-- Gallery section -->
       <section id="gallery">
 
         <h2>Photo Gallery</h2>
         <hr>
-
-        
-            <figure class="vertical-image">
+        <div class="figure-container">
+            
             <img src="img/Baking-640w.jpg" alt="Baking Cookies">
-            <figcaption> Baking Cookies with my friend</figcaption>
-        </figure>
+            <figcaption> Baking Cookies with my friend</figcaption>    
          
-         
-            <figure class="vertical-image">
+             
+            
             <img src="img/friends-640w.jpg" alt="picture with bex">
             <figcaption> Selfie with my friend!</figcaption>
-        </figure>
+         
 
-            <figure class="vertical-image">
+            
             <img src="img/drawing-640w.jpg" alt="My ghost drawing!">
             <figcaption> My procreate drawing for october!</figcaption>
-        </figure>
+         
         </div>
         <hr> 
       </section>
 
+         <!-- Lit section -->
       <article id="lit">
 
-        <h2>Spooky Dracula Excerpt!</h2>
+        <h2>The power of Image Hover Effects!</h2>
 
         <div>
-            <p>"Hush! there is someone in the corridor!" I got up softly, and crossing the room, gently opened the door.</p>
+            <p> Image hover effects in web design is used for various purposes, ranging from a style choice, to conveying information on a web page in a unique manner. </p>
 
-            <p>Just outside, stretched on a mattress, lay Mr. Morris, wide awake. He raised a warning hand for silence as he whispered to me:--</p>
+            <p> One example of an image hover effect that provides a positive benefit to a website is displaying things like captions when hovering over an image. This can help your website provide context or storytelling to an image without cluttering the interface. </p>
             
-            <p>"Hush! go back to bed; it is all right. One of us will be here all night. We don't mean to take any chances!"</p>
+            <p> Another cool way to use a hover effect is through image zooming. When hovering over an image and providing the zoom effect, it will zoom in on the image which can help the viewer view the image better.</p>
             
-            <p>His look and gesture forbade discussion, so I came back and told Mina. She sighed and positively a shadow of a smile stole over her poor, pale face as she put her arms round me and said softly:--</p>
+            <p> Another example that i've found while researching this topic is that you can apply image filters upon viewing an image! You can use color filters when hovering over an image which can create a more visually pleasing effect. This is especially helpful if it is an artist's website or for photographers who would like to show their image through a filter!</p>
             
-            <p>"Oh, thank God for good brave men!" With a sigh she sank back again to sleep. I write this now as I am not sleepy, though I must try again.</p>
-            
-            <p>4 October, morning.--Once again during the night I was wakened by Mina. This time we had all had a good sleep, for the grey of the coming dawn was making the windows into sharp oblongs, and the gas flame was like a speck rather than a disc of light. She said to me hurriedly:--</p>
-            
-            <p>"Go, call the Professor. I want to see him at once."</p>
-            
-            <p>"Why?" I asked.</p>
-
-
-
-
-
-
+            <p> A clever usage of a hover effect is having before and after images of the same picture. Your base image can be something before it is done, and then hovering over the image can change it to the final product that you would like to showcase! This technique can be used for almost any website to show growth or change to the viewers.</p>
+            <p> I've learned from a blog by Anna Fitzgerald that you can also use hover effects to add fun animations to images like a bounch effect. Transitional effects are a cool way to keep your website viewer engaged with your images!</p>
+            <p>  Here, I will show you an example of how some of the things I mentioned can be used for a website. I will show a free to use picture from unsplash (taken by NEOM) and transform it through these hover effects! I applied a base filter on the image to turn it grayscale and upon hovering over the image, it reverts back to its natural color as well as popping out for some cool effects!</p>
+            <img src="img/neom-DnF5nG4Fk4c-unsplash.jpg" alt="sample of hover effects!">
+            <p> Aside from these techniques, using image hover effects on your website will help you align with the design standards and help keep it in tune and modernized. Using hover effects makes the browsing expereince on websites far more engaging and fun for the viewer.</p>
 
         </div>
       </article>
@@ -141,7 +146,7 @@
         </div>
     </section>
     </main>
-
+         <!-- Contact section with form -->
     <section id="contact">
         <h2>Contact Us: </h2>
         <form id="form" name="form" method="POST" data-netlify="true">
@@ -191,9 +196,23 @@
             </fieldset>
         </form>
     </section>
+          <!-- Footer section with copyright information and GitHub link -->
     <footer>
-
+        
         &copy;2023- Dylan Hammermueller
+      <a href="https://github.com/RVCC-IDMX/about-me-DylanHammer05" target="_blank">GitHub Repo</a>
     </footer>
+       <!-- JavaScript script for handling hamburger menu interaction -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menu = document.querySelector('.navbar-links');
+            var hamburger = document.querySelector('.hamburger-menu');
+
+            hamburger.addEventListener('click', function () {
+                menu.classList.toggle('show');
+                hamburger.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>

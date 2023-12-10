@@ -1,32 +1,32 @@
 /* make scrolling smooth */
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
 /* 
- get rid of padding & sizing on body so
- header is at top
+get rid of padding & sizing on body so
+header is at top
 */
 
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
 }
 
-/* add some padding back to rest of page */
+/* addding some padding to main */
 main {
-    padding: 2vw;
+padding: 2vw;
 }
 
 /* navbar */
 .navbar {
-    background-color: #333;  
-     color:whitesmoke;
-     display: flex;
-     flex-direction: column;
-     font-size: 1.5rem;
-     margin-bottom: 1rem;
+background-color: #333;  
+ color:whitesmoke;
+ display: flex;
+ flex-direction: column;
+ font-size: 1.5rem;
+ margin-bottom: 1rem;
 }
 
 
@@ -34,73 +34,95 @@ main {
 
 
 .logo {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
 .logo img {
-    height: 6vw;
-    width: 6vw;
+height: 6vw;
+width: 6vw;
 }
 
 .logo h1 {
-    font-size: 1.2em;
+font-size: 1.2em;
 }
 
 /* navigation list */
 
 .navbar-links li {
-    list-style: none;
-    display: block;
-    padding: 0.5em 0;
+list-style: none;
+display: block;
+padding: 0.5em 0;
 
 }
 
 /*  
- style all a tags in header 
- and then on hover
-*/
+style all a tags */
 
 .navbar-links a {
-    color: whitesmoke;
-    background-color: #333;
-    font-size: 2rem;
-    padding: 1rem 1.25rem;
-    letter-spacing: 2px;
-    text-decoration: none;
-    display: inline-block;
+color: whitesmoke;
+background-color: #333;
+font-size: 2rem;
+padding: 1rem 1.25rem;
+letter-spacing: 2px;
+text-decoration: none;
+display: inline-block;
 }
 
 .navbar-links a:hover,
 .navbar-links a:focus {
-    color:#333;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    outline: none;
+color:#333;
+background-color: whitesmoke;
+border-radius: 10px;
+outline: none;
 }
 
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
+/* Hamburger Icon Styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+}
 
-@media screen and (min-width: 60rem) {
+.line {
+    width: 20px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 8px 0;
+    
+}
 
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .navbar ul {
-        display: flex;
-        justify-content: space-between;
-    }
-
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
     .navbar-links {
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        right:20px; 
+        left: 0;
+        width: 100%;
+        background-color: grey;
+        z-index: 1;
+    }
+
+    .navbar-links.show {
         display: flex;
-        flex-direction: row;
-        justify-content:space-between;
+    }
+
+    .navbar-links ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navbar-links li {
+        padding: 8px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-left: 11px;
     }
 }
