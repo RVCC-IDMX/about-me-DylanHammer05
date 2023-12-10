@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information and title for the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    
+    <!-- Font and Favicon links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Young+Serif&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="96x96" href="img/Transparent Favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/Transparent Favicon.png">
 
-
-<link href="css/style.css" rel="stylesheet">
-<link href="css/nav.css" rel="stylesheet">
+    <!-- Link to external CSS files -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header section containing navigation -->
     <header>
         <nav class="navbar">
+            <!-- Hamburger menu icon -->
             <div class="hamburger-menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
+            <!-- Logo and navigation links -->
             <div class="logo">
                 <img src="img/Transparent Favicon.png" alt="new logo!">
                 <h1>Web Dev I</h1>
             </div>
-            
             <div class="navbar-links">
                 <ul>
+                    <!-- Navigation links -->
                     <li><a href="#bio" class="nav-links">Bio</a></li>
                     <li><a href="#gallery" class="nav-links">Gallery</a></li>
                     <li><a href="#lit" class="nav-links">Blog</a></li>
@@ -36,19 +42,22 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main content section -->
     <main>
+        <!-- Hero section with personal information -->
         <section id="hero">
             <img src= "img/avataaars.png" alt="My avatar!">
-
             <div>
                 <p>Dylan Hammermueller</p>
                 <p> Hampton, NJ</p>
             </div>
-      </section>
+        </section>
 
-      <section id="bio">
-        <h2>Biography</h2>
-        <div>
+        <!-- Biography section -->
+        <section id="bio">
+            <h2>Biography</h2>
+            <div>
             <img src="img/20230531_210553.jpg" alt="My selfie"> 
             <p>Hello there! I'm Dylan Hammermueller, Born and raised in Hampton, NJ! As a new web developer, I find joy in translating ideas into digital realities. Using HTML and CSS is such a cool skill to have, and I hope I can improve upon it even more!</p>
         
@@ -65,6 +74,7 @@
          </div>
         </section>
 
+         <!-- Hobbies section -->
       <section id="hobbies">
         <h2>Hobbies:</h2>
 
@@ -82,7 +92,7 @@
 
 
       </section>
-
+        <!-- Gallery section -->
       <section id="gallery">
 
         <h2>Photo Gallery</h2>
@@ -106,6 +116,7 @@
         <hr> 
       </section>
 
+         <!-- Lit section -->
       <article id="lit">
 
         <h2>The power of Image Hover Effects!</h2>
@@ -124,13 +135,6 @@
             <p>  Here, I will show you an example of how some of the things I mentioned can be used for a website. I will show a free to use picture from unsplash (taken by NEOM) and transform it through these hover effects! I applied a base filter on the image to turn it grayscale and upon hovering over the image, it reverts back to its natural color as well as popping out for some cool effects!</p>
             <img src="img/neom-DnF5nG4Fk4c-unsplash.jpg" alt="sample of hover effects!">
             <p> Aside from these techniques, using image hover effects on your website will help you align with the design standards and help keep it in tune and modernized. Using hover effects makes the browsing expereince on websites far more engaging and fun for the viewer.</p>
-            
-
-
-
-
-
-
 
         </div>
       </article>
@@ -142,7 +146,7 @@
         </div>
     </section>
     </main>
-
+         <!-- Contact section with form -->
     <section id="contact">
         <h2>Contact Us: </h2>
         <form id="form" name="form" method="POST" data-netlify="true">
@@ -192,11 +196,13 @@
             </fieldset>
         </form>
     </section>
+          <!-- Footer section with copyright information and GitHub link -->
     <footer>
-
+        
         &copy;2023- Dylan Hammermueller
       <a href="https://github.com/RVCC-IDMX/about-me-DylanHammer05" target="_blank">GitHub Repo</a>
     </footer>
+       <!-- JavaScript script for handling hamburger menu interaction -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var menu = document.querySelector('.navbar-links');
@@ -208,6 +214,5 @@
             });
         });
     </script>
-    
 </body>
 </html>

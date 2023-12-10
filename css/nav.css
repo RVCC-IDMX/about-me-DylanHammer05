@@ -14,7 +14,7 @@ padding: 0;
 margin: 0;
 }
 
-/* add some padding back to rest of page */
+/* addding some padding to main */
 main {
 padding: 2vw;
 }
@@ -57,9 +57,7 @@ padding: 0.5em 0;
 }
 
 /*  
-style all a tags in header 
-and then on hover
-*/
+style all a tags */
 
 .navbar-links a {
 color: whitesmoke;
@@ -82,7 +80,7 @@ outline: none;
 
 /* Hamburger Icon Styles */
 .hamburger-menu {
-    display: none; /* Initially hide on larger screens */
+    display: none;
     cursor: pointer;
     margin-left: auto;
 }
