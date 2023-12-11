@@ -349,8 +349,8 @@ figcaption {
 /* Form Styles */
 
 fieldset {
-    border: 2px solid #0086FF;
-    border-radius: 10px;
+    border-style:none;
+    border-radius: 0px;
     margin-bottom: 20px;
     padding: 20px;
     background: linear-gradient(45deg, #E5C189, #FF9C6E);
@@ -362,6 +362,7 @@ fieldset {
 legend {
     color: #559FE0;
     font-weight: bold;
+    text-align:center;
 
 }
 

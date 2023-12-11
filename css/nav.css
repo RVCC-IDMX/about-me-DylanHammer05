@@ -124,5 +124,6 @@ outline: none;
     .hamburger-menu {
         display: block;
         margin-left: 11px;
+        z-index: 2;
     }
 }

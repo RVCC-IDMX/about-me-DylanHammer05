@@ -148,11 +148,10 @@
     </main>
          <!-- Contact section with form -->
     <section id="contact">
-        <h2>Contact Us: </h2>
         <form id="form" name="form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="form">
             <fieldset id="reply-fieldset">
-                <legend>Contact Form</legend>
+                <legend>Contact Us</legend>
 
                 <div id="formElements" div class="formElements">
 
@@ -181,7 +180,7 @@
                     <legend>Would you like a reply?</legend>
                     <ul>
                         <li>
-                            <input type="radio" id="yes" name="reply" value="yes">
+                            <input type="radio" id="yes" name="reply" value="yes"> 
                             <label for="yes">Yes, a reply would be nice.</label>
                         </li>
                         <li>
@@ -207,10 +206,14 @@
         document.addEventListener('DOMContentLoaded', function () {
             var menu = document.querySelector('.navbar-links');
             var hamburger = document.querySelector('.hamburger-menu');
-
+            var isOpen = false;
             hamburger.addEventListener('click', function () {
-                menu.classList.toggle('show');
-                hamburger.classList.toggle('open');
+                if (isOpen) {
+                    menu.classList.toggle("hidden");
+                }
+                else { 
+                    menu.classList.toggle('show');
+                }
             });
         });
     </script>
