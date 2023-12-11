@@ -206,14 +206,8 @@
         document.addEventListener('DOMContentLoaded', function () {
             var menu = document.querySelector('.navbar-links');
             var hamburger = document.querySelector('.hamburger-menu');
-            var isOpen = false;
-            hamburger.addEventListener('click', function () {
-                if (isOpen) {
-                    menu.classList.toggle("hidden");
-                }
-                else { 
-                    menu.classList.toggle('show');
-                }
+            hamburger.addEventListener('click', function () { 
+                menu.classList.toggle('show');
             });
         });
     </script>
